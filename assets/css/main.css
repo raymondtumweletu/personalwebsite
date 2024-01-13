@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*background-color: red;*/
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    padding: 0 15rem;
+}
+
+@media only screen and (max-width:800px) {
+    *{
+        background-color: aqua;
+    }
+    body{
+        padding: 0 4rem;
+    }
+}
+
+h1, h2, h3, h4, h5, h6{
+    text-transform: capitalize;
+    font-weight: 600;
+}
+h2{
+    font-family:monospace;
+    text-transform: uppercase;
+}
+a{
+    text-decoration: none;
+}
+
+.divider-up{
+    border-bottom: 1px solid #00000044;
+    width: 100%;
+    display: block;
+    padding: 1.5rem;
+}
+.divider-down{
+    color: aqua;
+    border-top: 0px solid #00000044;
+    width: 100%;
+    display: block;
+    padding: 1.5rem;
+}
+.header{
+    padding: 2rem 0;
+    span{
+        font-size: smaller;
+        font-weight: 400;
+    }
+}
+
+.competances-section .competances{
+    display: flex;
+    flex-direction: row;
+    flex-flow: wrap;
+    padding: 2rem;
+    gap: 8rem;
+}
+@media only screen and (max-width:800px){
+    .competances-section .competances{
+        display: column;
+        gap: 2rem;
+    }
+}
+
+.projects-container ul{
+    padding: 2rem;
+}
+
+
+.footer{
+    text-align: center;
+    padding: 2rem 0;
+}
